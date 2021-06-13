@@ -1,0 +1,51 @@
+/*basic styling */
+.input-container {
+  .input-label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: $input-color;
+  }
+  .input-icons {
+    margin-top: 16px;
+    i {
+      position: absolute;
+      margin-top: -2px;
+    }
+    .input-class {
+      width: 100%;
+      font-size: 14px;
+      border: 0;
+      outline: 0;
+      border-bottom: 1px solid $border;
+      padding: 0 0 15px 46px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: $input-color;
+      //padding: 15px 0px 17px 14px;
+      // transition: all 0.3s ease;
+      // outline: none !important;
+    }
+    .input-padding {
+      padding: 0 0 15px 0;
+    }
+    .fa-3x {
+      font-size: 3em !important;
+    }
+    .fa-color {
+      color: $input-color;
+    }
+  }
+
+  .error-message {
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    color: $input-color;
+  }
+}

@@ -1,0 +1,25 @@
+//Button
+.button-container {
+    border-radius: 6px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    background: $button-background;
+    &__title {
+      font-size: 16px;
+      font-weight: bold;
+      color: $button-title-color-1;
+    }
+  }
+  .btn-active {
+    cursor: pointer;
+    opacity: 1;
+    background: $button-active-color;
+  }
+  .btn-active-label {
+    color: $button-title-color-2;
+  }
+  .btn-disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }

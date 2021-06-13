@@ -1,0 +1,94 @@
+@import "../mixins.scss";
+
+.login-container {
+  display: none;
+  @include respond(phone) {
+    display: block;
+    min-height: 100vh;
+    margin-top: 79px;
+  }
+  &__header {
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__title {
+      @include respond(phone) {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 27px;
+        background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    &__sub-title {
+      @include respond(phone) {
+        margin-top: 38px;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 23px;
+        line-height: 27px;
+        color: $black-color;
+      }
+    }
+  }
+
+  &__form-content {
+    @include respond(phone) {
+      margin: 88px 0 121px 0;
+      padding: 0 57px;
+    }
+    &__input-element {
+      @include respond(phone) {
+        margin-top: 33px;
+      }
+    }
+    &__input-element:first-child {
+      @include respond(phone) {
+        margin-top: 0px;
+      }
+    }
+    &__label {
+      @include respond(phone) {
+        margin-top: 33px;
+        margin-right: 6px;
+        text-align: right;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: $black-color;
+      }
+    }
+  }
+
+  &__button-content {
+    @include respond(phone) {
+      padding: 0 64px;
+    }
+    &__label {
+      @include respond(phone) {
+        margin-top: 22px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: $black-color;
+        text-align: center;
+        margin-bottom: 47px;
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+          color: inherit;
+        }
+      }
+    }
+  }
+}
